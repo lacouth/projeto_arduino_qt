@@ -1,5 +1,4 @@
 #include <myled.h>
-
 #include <ArduinoJson.h>
 
 const int capacity = JSON_OBJECT_SIZE(3);
