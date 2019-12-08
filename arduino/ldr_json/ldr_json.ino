@@ -16,9 +16,9 @@ void loop() {
   serializeJson(doc,Serial);
   if( Serial.available() > 0 ){
     deserializeJson(doc,Serial);
-    if( doc["LED"] == "ON"){
+    if( doc["LED"] == 1){
       digitalWrite(D2,HIGH);
-    }else if ( doc["LED"] == "OFF"){
+    }else if ( doc["LED"] == 0){
       digitalWrite(D2,LOW);
     }
   }
